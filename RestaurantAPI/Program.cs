@@ -22,6 +22,7 @@ namespace RestaurantAPI
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseIIS();
                 })
                 .UseNLog();
     }
